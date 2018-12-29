@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3faacfa0-a3ad-4a43-8873-eb1c3c46fa94" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/auth/authenticate_user.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/auth/authorize_api_request.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/concerns/exception_handler.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/concerns/response.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/lib/json_web_token.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/lib/message.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/auth/authenticate_user_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/auth/authorize_api_request_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/controllers/application_controller_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/factories/users.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/requests/authentication_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/requests/users_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/support/controller_spec_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/support/request_spec_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/integration/swagger_authentication_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/integration/swagger_user_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/support/integration_spec_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/swagger_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/swagger_helper.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,16 +16,18 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/rest_barber_ranks@spec__rest_barber_ranks.rcov" NAME="spec: rest-barber-ranks Coverage Results" MODIFIED="1545971231646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rest-barber-ranks" />
-    <SUITE FILE_PATH="coverage/rest_barber_ranks@spec__rest_barber_ranks_spec_auth.rcov" NAME="spec: rest-barber-ranks/spec/auth Coverage Results" MODIFIED="1545974343095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rest-barber-ranks" />
+    <SUITE FILE_PATH="coverage/rest_barber_ranks@spec__rest_barber_ranks_spec_auth.rcov" NAME="spec: rest-barber-ranks/spec/auth Coverage Results" MODIFIED="1546069320455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rest-barber-ranks" />
     <SUITE FILE_PATH="coverage/rest_barber_ranks@spec__rest_barber_ranks_spec_requests_users_spec_rb.rcov" NAME="spec: rest-barber-ranks/spec/requests/users_spec.rb Coverage Results" MODIFIED="1545978763002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rest-barber-ranks" />
+    <SUITE FILE_PATH="coverage/rest_barber_ranks@spec__rest_barber_ranks_spec_integration_swagger_user_spec_rb.rcov" NAME="spec: rest-barber-ranks/spec/integration/swagger_user_spec.rb Coverage Results" MODIFIED="1546069999283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rest-barber-ranks" />
+    <SUITE FILE_PATH="coverage/rest_barber_ranks@Development__rest_barber_ranks.rcov" NAME="Development: rest-barber-ranks Coverage Results" MODIFIED="1546068612147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="rest-barber-ranks" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/requests/users_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="62" column="3" lean-forward="true" selection-start-line="62" selection-start-column="3" selection-end-line="62" selection-end-column="3" />
+            <state relative-caret-position="435">
+              <caret line="58" column="7" lean-forward="true" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
               <folding>
                 <element signature="e#272#1068#0" />
               </folding>
@@ -45,19 +36,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+        <entry file="file://$PROJECT_DIR$/spec/integration/swagger_authentication_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="375">
+              <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/integration/swagger_user_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="39" column="11" lean-forward="true" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/requests/authentication_spec.rb">
+        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+            <state relative-caret-position="390">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -97,7 +97,6 @@
         <option value="$PROJECT_DIR$/spec/support/controller_spec_helper.rb" />
         <option value="$PROJECT_DIR$/app/auth/authorize_api_request.rb" />
         <option value="$PROJECT_DIR$/app/lib/message.rb" />
-        <option value="$PROJECT_DIR$/spec/rails_helper.rb" />
         <option value="$PROJECT_DIR$/app/lib/json_web_token.rb" />
         <option value="$PROJECT_DIR$/spec/auth/authorize_api_request_spec.rb" />
         <option value="$PROJECT_DIR$/spec/requests/authentication_spec.rb" />
@@ -111,12 +110,25 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/spec/requests/users_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/integration/auth_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/support/integration_spec_helper.rb" />
+        <option value="$PROJECT_DIR$/spec/rails_helper.rb" />
+        <option value="$PROJECT_DIR$/spec/swagger_helper.rb" />
+        <option value="$PROJECT_DIR$/spec/integration/swagger_authentication_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/integration/swagger_user_spec.rb" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="-1668" />
-    <option name="width" value="1668" />
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="-2560" />
+    <option name="width" value="2560" />
     <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -167,37 +179,7 @@
               <item name="rest-barber-ranks" type="b2602c69:ProjectViewProjectNode" />
               <item name="rest-barber-ranks" type="462c0819:PsiDirectoryNode" />
               <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rest-barber-ranks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rest-barber-ranks" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rest-barber-ranks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rest-barber-ranks" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="factories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rest-barber-ranks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rest-barber-ranks" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rest-barber-ranks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rest-barber-ranks" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="requests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rest-barber-ranks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rest-barber-ranks" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -228,7 +210,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Rake.spec: rest-barber-ranks/spec/requests/users_spec.rb">
+  <component name="RunManager" selected="Rake.spec: rest-barber-ranks/spec/integration/swagger_user_spec.rb">
     <configuration name="Development: rest-barber-ranks" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="rest-barber-ranks" />
       <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
@@ -321,6 +303,28 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
       <method v="2" />
     </configuration>
+    <configuration name="spec: rest-barber-ranks/spec/integration/swagger_user_spec.rb" type="RakeRunConfigurationType" factoryName="Rake">
+      <module name="rest-barber-ranks" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="spec" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="spec/integration/swagger_user_spec.rb" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":rspec " />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="spec: rest-barber-ranks/spec/requests/users_spec.rb" type="RakeRunConfigurationType" factoryName="Rake">
       <module name="rest-barber-ranks" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -374,6 +378,7 @@
       <item itemvalue="Rake.spec: rest-barber-ranks" />
       <item itemvalue="Rake.spec: rest-barber-ranks/spec/auth" />
       <item itemvalue="Rake.spec: rest-barber-ranks/spec/requests/users_spec.rb" />
+      <item itemvalue="Rake.spec: rest-barber-ranks/spec/integration/swagger_user_spec.rb" />
       <item itemvalue="Rake.test: rest-barber-ranks" />
     </list>
   </component>
@@ -385,29 +390,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545851412128</updated>
-      <workItem from="1545851414283" duration="27054000" />
+      <workItem from="1545851414283" duration="35267000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="spec__rest-barber-ranks - 2018.12.27 at 17h 17m 32s.xml">
-      <configuration name="spec: rest-barber-ranks" configurationId="RakeRunConfigurationType" />
-    </history-entry>
-    <history-entry file="spec__rest-barber-ranks - 2018.12.27 at 21h 54m 47s.xml">
-      <configuration name="spec: rest-barber-ranks" configurationId="RakeRunConfigurationType" />
-    </history-entry>
-    <history-entry file="spec__rest-barber-ranks - 2018.12.27 at 22h 02m 43s.xml">
-      <configuration name="spec: rest-barber-ranks" configurationId="RakeRunConfigurationType" />
-    </history-entry>
-    <history-entry file="spec__rest-barber-ranks - 2018.12.27 at 22h 05m 27s.xml">
-      <configuration name="spec: rest-barber-ranks" configurationId="RakeRunConfigurationType" />
-    </history-entry>
-    <history-entry file="spec__rest-barber-ranks - 2018.12.27 at 22h 08m 19s.xml">
-      <configuration name="spec: rest-barber-ranks" configurationId="RakeRunConfigurationType" />
-    </history-entry>
-    <history-entry file="spec__rest-barber-ranks - 2018.12.27 at 23h 26m 48s.xml">
-      <configuration name="spec: rest-barber-ranks" configurationId="RakeRunConfigurationType" />
-    </history-entry>
     <history-entry file="spec__rest-barber-ranks - 2018.12.27 at 23h 27m 30s.xml">
       <configuration name="spec: rest-barber-ranks" configurationId="RakeRunConfigurationType" />
     </history-entry>
@@ -420,16 +407,43 @@
     <history-entry file="spec__rest-barber-ranks_spec_requests_users_spec_rb - 2018.12.28 at 01h 33m 13s.xml">
       <configuration name="spec: rest-barber-ranks/spec/requests/users_spec.rb" configurationId="RakeRunConfigurationType" />
     </history-entry>
+    <history-entry file="spec__rest-barber-ranks_spec_auth - 2018.12.29 at 02h 29m 34s.xml">
+      <configuration name="spec: rest-barber-ranks/spec/auth" configurationId="RakeRunConfigurationType" />
+    </history-entry>
+    <history-entry file="spec__rest-barber-ranks_spec_auth - 2018.12.29 at 02h 41m 54s.xml">
+      <configuration name="spec: rest-barber-ranks/spec/auth" configurationId="RakeRunConfigurationType" />
+    </history-entry>
+    <history-entry file="spec__rest-barber-ranks_spec_auth - 2018.12.29 at 02h 42m 19s.xml">
+      <configuration name="spec: rest-barber-ranks/spec/auth" configurationId="RakeRunConfigurationType" />
+    </history-entry>
+    <history-entry file="spec__rest-barber-ranks_spec_integration_swagger_user_spec_rb - 2018.12.29 at 02h 51m 11s.xml">
+      <configuration name="spec: rest-barber-ranks/spec/integration/swagger_user_spec.rb" configurationId="RakeRunConfigurationType" />
+    </history-entry>
+    <history-entry file="spec__rest-barber-ranks_spec_integration_swagger_user_spec_rb - 2018.12.29 at 02h 52m 33s.xml">
+      <configuration name="spec: rest-barber-ranks/spec/integration/swagger_user_spec.rb" configurationId="RakeRunConfigurationType" />
+    </history-entry>
+    <history-entry file="spec__rest-barber-ranks_spec_integration_swagger_user_spec_rb - 2018.12.29 at 02h 53m 41s.xml">
+      <configuration name="spec: rest-barber-ranks/spec/integration/swagger_user_spec.rb" configurationId="RakeRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27054000" />
+    <option name="totallyTimeSpent" value="35267000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1668" y="0" width="1668" height="1080" extended-state="6" />
+    <frame x="-2560" y="0" width="2560" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19680198" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12708499" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -442,7 +456,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32970297" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -468,11 +482,27 @@
         <watch expression="user.password" language="ruby" />
         <watch expression="user.authenticate(password)" language="ruby" />
         <watch expression="user.id" language="ruby" />
+        <watch expression="params" language="ruby" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>params</expression-string>
+        <language-id>ruby</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>params[&quot;_json&quot;]</expression-string>
+        <language-id>ruby</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>params[&quot;email&quot;]</expression-string>
+        <language-id>ruby</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>user.id</expression-string>
         <language-id>ruby</language-id>
@@ -500,21 +530,6 @@
       </expression>
       <expression>
         <expression-string>valid_attributes</expression-string>
-        <language-id>ruby</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>user.password_confirmation</expression-string>
-        <language-id>ruby</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>headers</expression-string>
-        <language-id>ruby</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>user_</expression-string>
         <language-id>ruby</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -566,13 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/concerns/exception_handler.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
@@ -587,13 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.1/gems/jwt-2.1.0/lib/jwt/algos/hmac.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -605,13 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.1/gems/database_cleaner-1.7.0/lib/database_cleaner/configuration.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
         </state>
       </provider>
     </entry>
@@ -685,20 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/support/controller_spec_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/support/request_spec_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.1/gems/rspec-expectations-3.8.2/lib/rspec/matchers.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
@@ -710,13 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
           <caret line="20" column="61" lean-forward="true" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/requests/authentication_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -741,31 +714,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+    <entry file="file://$PROJECT_DIR$/spec/auth/authorize_api_request_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="75">
+          <caret line="5" column="66" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/rails_helper.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        <state relative-caret-position="330">
+          <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -776,27 +735,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/auth/authorize_api_request_spec.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="66" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="66" />
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/authentication_controller.rb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.1/gems/database_cleaner-1.7.0/lib/database_cleaner/configuration.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/swagger_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-577">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/rails_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="42" column="37" lean-forward="true" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/support/controller_spec_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/support/integration_spec_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spec/support/request_spec_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/requests/authentication_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="40" column="39" lean-forward="true" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/authentication_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/integration/swagger_authentication_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spec/requests/users_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="62" column="3" lean-forward="true" selection-start-line="62" selection-start-column="3" selection-end-line="62" selection-end-column="3" />
+        <state relative-caret-position="435">
+          <caret line="58" column="7" lean-forward="true" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
           <folding>
             <element signature="e#272#1068#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/integration/swagger_user_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="39" column="11" lean-forward="true" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
         </state>
       </provider>
     </entry>
