@@ -33,12 +33,13 @@ RSpec.configure do |config|
           }
       },
       securityDefinitions: {
-          Bearer: {
+          jwt_token_auth: {
               type: :apiKey,
               name: 'Authorization',
               in: :header
           }
-      }
+      },
+      security: [Bearer: {}]
     }
   }
 

@@ -10,7 +10,6 @@ describe 'User API swag' do
       tags 'User'
       consumes 'application/json'
       produces 'application/json'
-      security [Bearer: {}]
 
       parameter name: :user, in: :body, schema: {
           type: :object,
@@ -52,12 +51,12 @@ describe 'User API swag' do
       tags 'User'
       consumes 'application/json'
       produces 'application/json'
+      security [jwt_token_auth: {}]
 
       parameter name: :id, in: :path, type: :string
-      parameter name: :Authorization, in: :header, type: :string
 
       response '200', 'gets the user by id' do
-        let(:Authorization) { token_generator(user.id) }
+        let(:Authorization) { token_generator(user.id) } # expected by the security: jwt_token_auth
         let(:id) { user.id }
         run_test!
       end
