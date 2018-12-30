@@ -45,6 +45,25 @@
         }
       }
     },
+    "/status/check": {
+      "get": {
+        "summary": "Checks status of the API",
+        "tags": [
+          "Status"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "gets status of the api"
+          }
+        }
+      }
+    },
     "/signup": {
       "post": {
         "summary": "Creates a User",
