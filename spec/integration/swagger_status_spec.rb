@@ -1,6 +1,6 @@
 require 'swagger_helper'
 
-describe 'Status API' do
+describe 'Status API swag' do
 
   path '/status/check' do
 

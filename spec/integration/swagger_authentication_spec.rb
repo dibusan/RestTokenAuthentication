@@ -1,6 +1,6 @@
 require 'swagger_helper'
 
-describe 'Authentication API' do
+describe 'Authentication API swag' do
 
   let!(:user) { create(:user) }
   let(:valid_credentials) do

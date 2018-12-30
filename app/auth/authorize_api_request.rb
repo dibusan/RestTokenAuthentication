@@ -16,9 +16,12 @@ class AuthorizeApiRequest
     attr_reader :headers
 
     def user
+      exclude_columns = ["pasword_digest"]
       # check if user is in the database
       # memoize user object
-      @user ||= User.find(decoded_auth_token[:user_id]) if decoded_auth_token
+      @user ||= User.select(User.attribute_names - exclude_columns)
+                    .find(decoded_auth_token[:user_id]) if decoded_auth_token
+
         # handle user not found
     rescue ActiveRecord::RecordNotFound => e
       # raise custom error

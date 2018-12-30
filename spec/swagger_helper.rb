@@ -19,7 +19,26 @@ RSpec.configure do |config|
         title: 'API V1',
         version: 'v1'
       },
-      paths: {}
+      paths: {},
+      definitions: {
+          user: {
+              type: 'object',
+              properties: {
+                  id: { type: 'integer' },
+                  first: { type: 'string' },
+                  last: { type: 'string'},
+                  email: { type: 'string'}
+              },
+              required: %w(id first last email)
+          }
+      },
+      securityDefinitions: {
+          Bearer: {
+              type: :apiKey,
+              name: 'Authorization',
+              in: :header
+          }
+      }
     }
   }
 

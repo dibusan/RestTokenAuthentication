@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Status API', type: :request do
+RSpec.describe 'Status API spec', type: :request do
 
   describe 'GET /status/check' do
     context 'when api is alive' do
